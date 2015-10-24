@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3ECBB7D31BDBB8AA00328B67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBB7D21BDBB8AA00328B67 /* AppDelegate.swift */; };
+		3ECBB7D51BDBB8AA00328B67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBB7D41BDBB8AA00328B67 /* ViewController.swift */; };
+		3ECBB7D81BDBB8AA00328B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECBB7D61BDBB8AA00328B67 /* Main.storyboard */; };
+		3ECBB7DA1BDBB8AA00328B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ECBB7D91BDBB8AA00328B67 /* Assets.xcassets */; };
+		3ECBB7DD1BDBB8AA00328B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECBB7DB1BDBB8AA00328B67 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3ECBB7CF1BDBB8AA00328B67 /* Plum-o-Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plum-o-Meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECBB7D21BDBB8AA00328B67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ECBB7D41BDBB8AA00328B67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3ECBB7D71BDBB8AA00328B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ECBB7D91BDBB8AA00328B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ECBB7DC1BDBB8AA00328B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ECBB7DE1BDBB8AA00328B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ECBB7CC1BDBB8AA00328B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ECBB7C61BDBB8AA00328B67 = {
+			isa = PBXGroup;
+			children = (
+				3ECBB7D11BDBB8AA00328B67 /* Plum-o-Meter */,
+				3ECBB7D01BDBB8AA00328B67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ECBB7D01BDBB8AA00328B67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ECBB7CF1BDBB8AA00328B67 /* Plum-o-Meter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ECBB7D11BDBB8AA00328B67 /* Plum-o-Meter */ = {
+			isa = PBXGroup;
+			children = (
+				3ECBB7D21BDBB8AA00328B67 /* AppDelegate.swift */,
+				3ECBB7D41BDBB8AA00328B67 /* ViewController.swift */,
+				3ECBB7D61BDBB8AA00328B67 /* Main.storyboard */,
+				3ECBB7D91BDBB8AA00328B67 /* Assets.xcassets */,
+				3ECBB7DB1BDBB8AA00328B67 /* LaunchScreen.storyboard */,
+				3ECBB7DE1BDBB8AA00328B67 /* Info.plist */,
+			);
+			path = "Plum-o-Meter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ECBB7CE1BDBB8AA00328B67 /* Plum-o-Meter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ECBB7E11BDBB8AA00328B67 /* Build configuration list for PBXNativeTarget "Plum-o-Meter" */;
+			buildPhases = (
+				3ECBB7CB1BDBB8AA00328B67 /* Sources */,
+				3ECBB7CC1BDBB8AA00328B67 /* Frameworks */,
+				3ECBB7CD1BDBB8AA00328B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plum-o-Meter";
+			productName = "Plum-o-Meter";
+			productReference = 3ECBB7CF1BDBB8AA00328B67 /* Plum-o-Meter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ECBB7C71BDBB8AA00328B67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Simon Gladman";
+				TargetAttributes = {
+					3ECBB7CE1BDBB8AA00328B67 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 3ECBB7CA1BDBB8AA00328B67 /* Build configuration list for PBXProject "Plum-o-Meter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ECBB7C61BDBB8AA00328B67;
+			productRefGroup = 3ECBB7D01BDBB8AA00328B67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ECBB7CE1BDBB8AA00328B67 /* Plum-o-Meter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ECBB7CD1BDBB8AA00328B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECBB7DD1BDBB8AA00328B67 /* LaunchScreen.storyboard in Resources */,
+				3ECBB7DA1BDBB8AA00328B67 /* Assets.xcassets in Resources */,
+				3ECBB7D81BDBB8AA00328B67 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ECBB7CB1BDBB8AA00328B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECBB7D51BDBB8AA00328B67 /* ViewController.swift in Sources */,
+				3ECBB7D31BDBB8AA00328B67 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3ECBB7D61BDBB8AA00328B67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ECBB7D71BDBB8AA00328B67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ECBB7DB1BDBB8AA00328B67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ECBB7DC1BDBB8AA00328B67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ECBB7DF1BDBB8AA00328B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ECBB7E01BDBB8AA00328B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ECBB7E21BDBB8AA00328B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Plum-o-Meter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.flexmonkey.Plum-o-Meter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3ECBB7E31BDBB8AA00328B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Plum-o-Meter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.flexmonkey.Plum-o-Meter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ECBB7CA1BDBB8AA00328B67 /* Build configuration list for PBXProject "Plum-o-Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ECBB7DF1BDBB8AA00328B67 /* Debug */,
+				3ECBB7E01BDBB8AA00328B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ECBB7E11BDBB8AA00328B67 /* Build configuration list for PBXNativeTarget "Plum-o-Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ECBB7E21BDBB8AA00328B67 /* Debug */,
+				3ECBB7E31BDBB8AA00328B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ECBB7C71BDBB8AA00328B67 /* Project object */;
+}
