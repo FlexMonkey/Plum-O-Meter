@@ -1,5 +1,5 @@
 # Plum-O-Meter
-###3D Touch Application for Weighing Plums (and other small fruit!)
+### 3D Touch Application for Weighing Plums (and other small fruit!)
 
 ##### _Companion project to this blog post: http://flexmonkey.blogspot.co.uk/2015/10/the-plum-o-meter-weighing-plums-using.html_
 
@@ -7,7 +7,7 @@ Here at FlexMonkey Towers, the ever beautiful Mrs FlexMonkey and I love to spend
 
 3D Touch to the rescue! My latest app, the Plum-O-Meter, has been specifically designed to solve this problem. Simply place two delicious plums on the iPhone's screen and the heavier of the two is highlighted in yellow so you can hand it to your beloved without fear of being thought of as a greedy-guts.
 
-##Lay your plums on me
+## Lay your plums on me
 
 Plum-O-Meter is pretty simple stuff: when its view controller's `touchesBegan` is called, it  adds a new `CircleWithLabel` to its view's layer for each touch. `CircleWithLabel` is a `CAShapeLayer` which draws a circle and has an additional `CATextLayer`. This new layer is added to a dictionary with the touch as the key. The force of the touch is used to control the new layer's radius and is displayed in the label:
 
@@ -90,7 +90,7 @@ When a plum is removed from the screen, its `CircleWithLabel` layer is removed a
     }
 ```
 
-##In Conclusion
+## In Conclusion
 
 The value displayed is actually the normalised force as a percentage. It's interesting to see that it changes depending on other forces acting upon the screen which to me indicates that the 6s isn't going to replace your high precision electronic scales. What this demo does show is that the 6s can handle multiple touch points each with a decent value for their relative forces.
 
