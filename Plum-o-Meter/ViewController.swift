@@ -19,24 +19,24 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
-        view.multipleTouchEnabled = true
+        view.isMultipleTouchEnabled = true
         
         label.text = "lay your plums on me."
         
-        label.textAlignment = NSTextAlignment.Center
+        label.textAlignment = NSTextAlignment.center
         
         view.addSubview(label)
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
-        label.hidden = true
+        label.isHidden = true
         
         for touch in touches
         {
             let circle = CircleWithLabel()
             
-            circle.drawAtPoint(touch.locationInView(view),
+            circle.drawAtPoint(location: touch.location(in: view),
                 force: touch.force / touch.maximumPossibleForce)
             
             circles[touch] = circle
@@ -46,33 +46,33 @@ class ViewController: UIViewController
         highlightHeaviest()
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?)
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         for touch in touches where circles[touch] != nil
         {
             let circle = circles[touch]!
             
-            circle.drawAtPoint(touch.locationInView(view),
+            circle.drawAtPoint(location: touch.location(in: view),
                 force: touch.force / touch.maximumPossibleForce)
         }
         
         highlightHeaviest()
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?)
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         for touch in touches where circles[touch] != nil
         {
             let circle = circles[touch]!
             
-            circles.removeValueForKey(touch)
+            circles.removeValue(forKey: touch)
             circle.removeFromSuperlayer()
         }
         
         highlightHeaviest()
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?)
+    override func touchesCancelled(_ touches: Set<UITouch>?, with event: UIEvent?)
     {
         guard let touches = touches else
         {
@@ -91,7 +91,7 @@ class ViewController: UIViewController
     {
         func getMaxTouch() -> UITouch?
         {
-            return circles.sort({
+            return circles.sorted(by: {
                 (a: (UITouch, CircleWithLabel), b: (UITouch, CircleWithLabel)) -> Bool in
                 
                 return a.0.force > b.0.force
@@ -104,9 +104,8 @@ class ViewController: UIViewController
         }
     }
     
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
-    {
-        return UIInterfaceOrientationMask.Landscape
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
     }
     
     override func viewDidLayoutSubviews()
@@ -125,16 +124,16 @@ class CircleWithLabel: CAShapeLayer
     {
         super.init()
         
-        text.foregroundColor = UIColor.blueColor().CGColor
-        text.alignmentMode = kCAAlignmentCenter
+        text.foregroundColor = UIColor.blue.cgColor
+        text.alignmentMode = CATextLayerAlignmentMode.center
         addSublayer(text)
         
-        strokeColor = UIColor.blueColor().CGColor
+        strokeColor = UIColor.blue.cgColor
         lineWidth = 5
         fillColor = nil
     }
     
-    override init(layer: AnyObject)
+    override init(layer: Any)
     {
         super.init(layer: layer)
     }
@@ -148,7 +147,7 @@ class CircleWithLabel: CAShapeLayer
     {
         didSet
         {
-            fillColor = isMax ? UIColor.yellowColor().CGColor : nil
+            fillColor = isMax ? UIColor.yellow.cgColor : nil
         }
     }
     
@@ -157,9 +156,9 @@ class CircleWithLabel: CAShapeLayer
         let radius = 120 + (force * 120)
         
         path = UIBezierPath(
-            ovalInRect: CGRect(
+            ovalIn: CGRect(
                 origin: location.offset(dx: radius, dy: radius),
-                size: CGSize(width: radius * 2, height: radius * 2))).CGPath
+                size: CGSize(width: radius * 2, height: radius * 2))).cgPath
         
         text.string = String(format: "%.1f%%", force * 100)
         
@@ -171,7 +170,7 @@ class CircleWithLabel: CAShapeLayer
 
 extension CGPoint
 {
-    func offset(dx dx: CGFloat, dy: CGFloat) -> CGPoint
+    func offset(dx: CGFloat, dy: CGFloat) -> CGPoint
     {
         return CGPoint(x: self.x - dx, y: self.y - dy)
     }
